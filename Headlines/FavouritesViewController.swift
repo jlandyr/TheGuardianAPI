@@ -22,7 +22,7 @@ class SubtitleCell: UITableViewCell {
 class FavouritesViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     var articleSelected: ((IndexPath) -> Void)?
-    let articles = Article.all
+    let articles = FavoriteArticle.allFavorites
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,6 @@ class FavouritesViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed))
         tableView.register(SubtitleCell.self, forCellReuseIdentifier: "cell")
         
-        Article.fetchArticles { _, _ in }
     }
     
     @objc func doneButtonPressed() {
