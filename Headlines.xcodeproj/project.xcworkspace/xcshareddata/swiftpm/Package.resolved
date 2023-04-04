@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
+        "version" : "5.5.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core",
+      "state" : {
+        "revision" : "dcd3788f75bafb0cc397d145e1651aab3ad4bf0e",
+        "version" : "11.12.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "revision" : "628cf20632d65d3a3e90ae8aaf52bce596d7ad8f",
+        "version" : "10.24.2"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "2c8ed9a2f3ad537dbe9e58e2ec18be361da112aa",
+        "version" : "5.9.5"
+      }
+    }
+  ],
+  "version" : 2
+}
