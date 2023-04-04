@@ -88,15 +88,32 @@ class Article: Object {
         }
     }
     
-    //MARK: - Save articles
-    static func save(_ article: Article) {
+    func isFavorite()->Bool {
+        let allFavorites = FavoriteArticle.allFavorites
+        return allFavorites.contains(where: {$0.headline == self.headline})
+    }
+}
+
+class FavoriteArticle : Article {
+    
+    static var allFavorites: [FavoriteArticle] {
         let realm = try! Realm()
-        do {
-           try realm.write {
-                article
+        let all = realm.objects(FavoriteArticle.self)
+        return Array(all)
+    }
+    
+    //MARK: - Save articles
+    static func setFavorite(_ article: Article) {
+        let realm = try! Realm()
+        let favorite = FavoriteArticle(value: article)
+        if realm.objects(FavoriteArticle.self).contains(where: {$0.headline == article.headline}){
+            try! realm.write {
+                realm.delete(realm.objects(FavoriteArticle.self).filter("headline=%@",article.headline))
             }
-        }catch {
-            print(error.localizedDescription)
+        } else {
+            _ = try? realm.write {
+                realm.add(favorite)
+            }
         }
     }
 }
