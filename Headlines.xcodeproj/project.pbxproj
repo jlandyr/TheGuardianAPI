@@ -19,6 +19,8 @@
 		AFC312951EC1E4B300105E93 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC312941EC1E4B300105E93 /* FavouritesViewController.xib */; };
 		AFC312971EC1E80800105E93 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC312961EC1E80800105E93 /* Article.swift */; };
 		AFC312991EC1FE4A00105E93 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC312981EC1FE4A00105E93 /* FavouritesViewController.swift */; };
+		FE6262E029DC56CF00D4C356 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6262DE29DC56CF00D4C356 /* NewsCollectionViewCell.swift */; };
+		FE6262E129DC56CF00D4C356 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6262DF29DC56CF00D4C356 /* NewsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AFC312941EC1E4B300105E93 /* FavouritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		AFC312961EC1E80800105E93 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		AFC312981EC1FE4A00105E93 /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		FE6262DE29DC56CF00D4C356 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE6262DF29DC56CF00D4C356 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				AFC312921EC1E4AF00105E93 /* ViewController.xib */,
 				AFC312981EC1FE4A00105E93 /* FavouritesViewController.swift */,
 				AFC312941EC1E4B300105E93 /* FavouritesViewController.xib */,
+				FE6262DE29DC56CF00D4C356 /* NewsCollectionViewCell.swift */,
+				FE6262DF29DC56CF00D4C356 /* NewsCollectionViewCell.xib */,
 				AFC312961EC1E80800105E93 /* Article.swift */,
 				AFC312871EC1E45A00105E93 /* Assets.xcassets */,
 				AFC312891EC1E45A00105E93 /* LaunchScreen.storyboard */,
@@ -163,6 +169,7 @@
 				AFC312951EC1E4B300105E93 /* FavouritesViewController.xib in Resources */,
 				AFC3128B1EC1E45A00105E93 /* LaunchScreen.storyboard in Resources */,
 				AFC312931EC1E4AF00105E93 /* ViewController.xib in Resources */,
+				FE6262E129DC56CF00D4C356 /* NewsCollectionViewCell.xib in Resources */,
 				AFC312881EC1E45A00105E93 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +185,7 @@
 				AFC312831EC1E45A00105E93 /* ViewController.swift in Sources */,
 				AFC312811EC1E45A00105E93 /* AppDelegate.swift in Sources */,
 				AFC312971EC1E80800105E93 /* Article.swift in Sources */,
+				FE6262E029DC56CF00D4C356 /* NewsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
