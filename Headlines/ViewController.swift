@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
     
     private func saveFavorite(_ article:Article) {
-        FavoriteArticle.setFavorite(article)
+        FavouriteArticle.setFavorite(article)
     }
 }
 

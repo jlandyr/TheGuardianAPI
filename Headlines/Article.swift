@@ -89,26 +89,26 @@ class Article: Object {
     }
     
     func isFavorite()->Bool {
-        let allFavorites = FavoriteArticle.allFavorites
+        let allFavorites = FavouriteArticle.allFavorites
         return allFavorites.contains(where: {$0.headline == self.headline})
     }
 }
 
-class FavoriteArticle : Article {
+class FavouriteArticle : Article {
     
-    static var allFavorites: [FavoriteArticle] {
+    static var allFavorites: [FavouriteArticle] {
         let realm = try! Realm()
-        let all = realm.objects(FavoriteArticle.self)
+        let all = realm.objects(FavouriteArticle.self)
         return Array(all)
     }
     
     //MARK: - Save articles
     static func setFavorite(_ article: Article) {
         let realm = try! Realm()
-        let favorite = FavoriteArticle(value: article)
-        if realm.objects(FavoriteArticle.self).contains(where: {$0.headline == article.headline}){
+        let favorite = FavouriteArticle(value: article)
+        if realm.objects(FavouriteArticle.self).contains(where: {$0.headline == article.headline}){
             try! realm.write {
-                realm.delete(realm.objects(FavoriteArticle.self).filter("headline=%@",article.headline))
+                realm.delete(realm.objects(FavouriteArticle.self).filter("headline=%@",article.headline))
             }
         } else {
             _ = try? realm.write {

@@ -22,7 +22,7 @@ class SubtitleCell: UITableViewCell {
 class FavouritesViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     var articleSelected: ((IndexPath) -> Void)?
-    let articles = FavoriteArticle.allFavorites
+    let articles = FavouriteArticle.allFavorites
     
     override func viewDidLoad() {
         super.viewDidLoad()
