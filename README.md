@@ -1,4 +1,4 @@
-# Monzo Code Test for iOS Engineers
+# Code Test for iOS Engineers
 
 <img src="spec.png" width="100%" />
 
@@ -21,9 +21,6 @@ We're interested to see the decisions you make along the way. Please include a s
 - what bugs did you find but not fix?
 - what would you change about the visual design of the app?
 - Approximately how long you spent on this project.
-
-We'd love it if you could try and get this back to us within a week, but please let us know if you need longer, so we don't check-in with you too early 😊
-Make a zip of your solution and upload it to the link in the email inviting you to this repository.
 
 ### Guardian API Key
 
